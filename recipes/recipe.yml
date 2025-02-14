@@ -37,7 +37,7 @@ modules:
       - git-credential-oauth  
       - gnome-backgrounds-extras  
       - gnome-tweaks  
-      - google-chrome-unstable  
+      - google-chrome-stable  
       - ibm-plex-mono-fonts  
       - ifuse  
       - iotop  
