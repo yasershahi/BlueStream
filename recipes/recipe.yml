@@ -73,6 +73,7 @@ modules:
       - codec.sh
       - driver.sh
       - patch.sh
+      - chrome.sh
 
   - type: brew
     nofile-limits: true
