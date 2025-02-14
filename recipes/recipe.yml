@@ -26,7 +26,8 @@ modules:
       - code  
       - dconf-editor  
       - epiphany  
-      - fastfetch  
+      - fastfetch
+      - ffmpegthumbnailer
       - gcc
       - gh  
       - git-credential-oauth  
