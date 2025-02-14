@@ -52,9 +52,7 @@ modules:
       - subversion  
       - sysprof  
       - tailscale  
-      - unrar  
-      - vlc  
-      - vlc-plugins-all  
+      - unrar
       - wireguard-tools  
       - zsh
       - libxcrypt-compat
