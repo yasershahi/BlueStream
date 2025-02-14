@@ -21,11 +21,6 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/trixieua/mutter-patched/repo/fedora-%OS_VERSION%/trixieua-mutter-patched-fedora-%OS_VERSION%.repo
       - https://packages.microsoft.com/yumrepos/vscode/config.repo
     install:
-      - gnome-shell
-      - mutter
-      - mutter-common
-      - xorg-x11-server-Xwayland
-      - gdm
       - aria2  
       - android-tools  
       - code  
@@ -62,7 +57,6 @@ modules:
       - vlc-plugins-all  
       - wireguard-tools  
       - zsh
-      - make
       - libxcrypt-compat
     remove:
       - gnome-tour
@@ -94,6 +88,5 @@ modules:
         - rpm-ostreed-automatic.timer
       disabled:
         - flatpak-system-update.timer
-
 
   - type: signing
