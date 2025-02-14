@@ -11,9 +11,15 @@ modules:
       - source: system
         destination: /
 
+  - type: bling
+    install:
+        - negativo17
+        - dconf-update-service
+
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/trixieua/mutter-patched/repo/fedora-%OS_VERSION%/trixieua-mutter-patched-fedora-%OS_VERSION%.repo
+      - https://packages.microsoft.com/yumrepos/vscode/config.repo
     install:
       - gnome-shell
       - mutter
@@ -26,6 +32,7 @@ modules:
       - dconf-editor  
       - epiphany  
       - fastfetch  
+      - gcc
       - gh  
       - git-credential-oauth  
       - gnome-backgrounds-extras  
@@ -43,7 +50,8 @@ modules:
       - NetworkManager-sstp-gnome  
       - p7zip  
       - p7zip-plugins  
-      - podman-compose  
+      - podman-compose
+      - podman-docker
       - podmansh
       - sstp-client  
       - subversion  
@@ -54,7 +62,6 @@ modules:
       - vlc-plugins-all  
       - wireguard-tools  
       - zsh  
-
     remove:
       - gnome-tour
       - yelp
@@ -65,5 +72,21 @@ modules:
       - gnome-shell-extension-places-menu
       - gnome-shell-extension-window-list
       - gnome-shell-extension-background-logo
+
+  - type: brew
+    nofile-limits: true
+    brew-analytics: false
+
+  - type: systemd
+    system:
+      enabled:
+        - flatpak-add-flathub-repo.service
+        - flatpak-replace-fedora-apps.service
+        - flatpak-cleanup.timer
+        - flatpak-cleanup.service
+        - rpm-ostreed-automatic.timer
+      disabled:
+        - flatpak-system-update.timer
+
 
   - type: signing
