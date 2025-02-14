@@ -3,7 +3,7 @@ name: BlueStream
 description: Seamless Daily Computing with Fedora Silverblue at Its Core.
 
 base-image: quay.io/fedora/fedora-silverblue
-image-version: latest
+image-version: 41
 
 modules:
   - type: files
@@ -13,7 +13,7 @@ modules:
 
   - type: bling
     install:
-        - negativo17
+        - rpmfusion
         - dconf-update-service
 
   - type: rpm-ostree
@@ -61,10 +61,11 @@ modules:
       - vlc  
       - vlc-plugins-all  
       - wireguard-tools  
-      - zsh  
+      - zsh
+      - make
+      - libxcrypt-compat
     remove:
       - gnome-tour
-      - yelp
       - gnome-software-rpm-ostree
       - gnome-classic-session
       - gnome-shell-extension-apps-menu
@@ -72,6 +73,12 @@ modules:
       - gnome-shell-extension-places-menu
       - gnome-shell-extension-window-list
       - gnome-shell-extension-background-logo
+
+  - type: script
+    scripts:
+      - codec.sh
+      - driver.sh
+      - patch.sh
 
   - type: brew
     nofile-limits: true
