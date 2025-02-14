@@ -1,6 +1,6 @@
 ---
 name: BlueStream
-description: Seamless Daily Driving with Fedora Silverblue at Its Core.
+description: Seamless Daily Computing with Fedora Silverblue at Its Core.
 
 base-image: quay.io/fedora/fedora-silverblue
 image-version: latest
@@ -20,6 +20,41 @@ modules:
       - mutter-common
       - xorg-x11-server-Xwayland
       - gdm
+      - aria2  
+      - android-tools  
+      - code  
+      - dconf-editor  
+      - epiphany  
+      - fastfetch  
+      - gh  
+      - git-credential-oauth  
+      - gnome-backgrounds-extras  
+      - gnome-tweaks  
+      - google-chrome-unstable  
+      - ibm-plex-mono-fonts  
+      - ifuse  
+      - iotop  
+      - libimobiledevice  
+      - liberation-fonts-all  
+      - libsss_autofs  
+      - libxcrypt-compat  
+      - net-tools  
+      - NetworkManager-sstp  
+      - NetworkManager-sstp-gnome  
+      - p7zip  
+      - p7zip-plugins  
+      - podman-compose  
+      - podmansh
+      - sstp-client  
+      - subversion  
+      - sysprof  
+      - tailscale  
+      - unrar  
+      - vlc  
+      - vlc-plugins-all  
+      - wireguard-tools  
+      - zsh  
+
     remove:
       - gnome-tour
       - yelp
