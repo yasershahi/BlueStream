@@ -25,7 +25,6 @@ modules:
     install:
       - aria2  
       - android-tools
-      - android-udev-rules
       - btop
       - code  
       - dconf-editor
@@ -54,7 +53,6 @@ modules:
       - net-tools  
       - NetworkManager-sstp  
       - NetworkManager-sstp-gnome
-      - nerd-fonts
       - p7zip  
       - p7zip-plugins  
       - podman-compose
@@ -86,6 +84,17 @@ modules:
       - codec.sh
       - driver.sh
       - patch.sh
+
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - FiraCode
+        - Hack
+        - Terminus
+        - JetBrainsMono
+        - NerdFontsSymbolsOnly
+      google-fonts:
+        - Inter
 
   - type: systemd
     system:
