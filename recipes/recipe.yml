@@ -24,42 +24,53 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/sunwire/envycontrol/repo/fedora-%OS_VERSION%/sunwire-envycontrol-fedora-%OS_VERSION%.repo
     install:
       - aria2  
-      - android-tools  
+      - android-tools
+      - android-udev-rules
+      - btop
       - code  
-      - dconf-editor  
-      - epiphany  
+      - dconf-editor
+      - distrobox
       - fastfetch
       - ffmpegthumbnailer
+      - flatpak-spawn
+      - fzf
       - gcc
       - gh  
       - git-credential-oauth  
-      - gnome-backgrounds-extras  
+      - gnome-backgrounds-extras
+      - gnome-epub-thumbnailer
+      - gnome-themes-extra
       - gnome-tweaks
+      - gvfs-nfs
+      - heif-pixbuf-loader
       - ibm-plex-mono-fonts  
       - ifuse  
       - iotop  
       - libimobiledevice  
       - liberation-fonts-all  
       - libsss_autofs  
-      - libxcrypt-compat  
+      - libxcrypt-compat
+      - lshw
       - net-tools  
       - NetworkManager-sstp  
       - NetworkManager-sstp-gnome
+      - nerd-fonts
       - p7zip  
       - p7zip-plugins  
       - podman-compose
-      - podman-docker
       - podmansh
       - python3-envycontrol
       - sstp-client  
-      - subversion  
-      - sysprof
+      - subversion
       - tailscale
+      - tcpdump
       - ungoogled-chromium
       - unrar
-      - wireguard-tools  
+      - wireguard-tools
+      - yt-dlp
       - zsh
-      - libxcrypt-compat
+      - zsh-autosuggestions
+      - zsh-syntax-highlighting
     remove:
       - gnome-tour
       - gnome-classic-session
@@ -68,16 +79,13 @@ modules:
       - gnome-shell-extension-places-menu
       - gnome-shell-extension-window-list
       - gnome-shell-extension-background-logo
+      - gnome-software-rpm-ostree
 
   - type: script
     scripts:
       - codec.sh
       - driver.sh
       - patch.sh
-
-  - type: brew
-    nofile-limits: true
-    brew-analytics: false
 
   - type: systemd
     system:
@@ -87,7 +95,5 @@ modules:
         - flatpak-cleanup.timer
         - flatpak-cleanup.service
         - rpm-ostreed-automatic.timer
-      disabled:
-        - flatpak-system-update.timer
 
   - type: signing
