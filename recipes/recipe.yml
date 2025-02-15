@@ -68,6 +68,7 @@ modules:
       - unrar
       - wireguard-tools
       - yt-dlp
+      - zstd
     remove:
       - gnome-tour
       - gnome-classic-session
