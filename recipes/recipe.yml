@@ -53,7 +53,7 @@ modules:
       - python3-envycontrol
       - sstp-client  
       - subversion  
-      - sysprof  
+      - sysprof
       - tailscale
       - ungoogled-chromium
       - unrar
@@ -76,7 +76,6 @@ modules:
       - patch.sh
 
   - type: brew
-    nofile-limits: true
     brew-analytics: false
 
   - type: systemd
