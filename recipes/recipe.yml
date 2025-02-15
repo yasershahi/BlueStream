@@ -21,6 +21,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/trixieua/mutter-patched/repo/fedora-%OS_VERSION%/trixieua-mutter-patched-fedora-%OS_VERSION%.repo
       - https://packages.microsoft.com/yumrepos/vscode/config.repo
       - https://copr.fedorainfracloud.org/coprs/wojnilowicz/ungoogled-chromium/repo/fedora-%OS_VERSION%/wojnilowicz-ungoogled-chromium-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/dusansimic/themes/repo/fedora-%OS_VERSION%/dusansimic-themes-fedora-%OS_VERSION%.repo
     install:
       - aria2  
       - android-tools  
@@ -43,7 +44,8 @@ modules:
       - libxcrypt-compat  
       - net-tools  
       - NetworkManager-sstp  
-      - NetworkManager-sstp-gnome  
+      - NetworkManager-sstp-gnome
+      - morewaita-icon-theme
       - p7zip  
       - p7zip-plugins  
       - podman-compose
