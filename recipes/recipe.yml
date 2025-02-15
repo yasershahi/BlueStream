@@ -25,13 +25,13 @@ modules:
     install:
       - aria2  
       - android-tools
-      - btop
       - code  
       - dconf-editor
       - distrobox
       - fastfetch
       - ffmpegthumbnailer
       - flatpak-spawn
+      - fish
       - fzf
       - gcc
       - gh  
@@ -54,9 +54,11 @@ modules:
       - NetworkManager-sstp  
       - NetworkManager-sstp-gnome
       - p7zip  
-      - p7zip-plugins  
+      - p7zip-plugins
+      - pipx
       - podman-compose
       - podmansh
+      - powerline-fonts
       - python3-envycontrol
       - sstp-client  
       - subversion
@@ -66,9 +68,6 @@ modules:
       - unrar
       - wireguard-tools
       - yt-dlp
-      - zsh
-      - zsh-autosuggestions
-      - zsh-syntax-highlighting
     remove:
       - gnome-tour
       - gnome-classic-session
