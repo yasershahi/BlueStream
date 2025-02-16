@@ -11,7 +11,8 @@ rpm-ostree override remove \
     libavutil-free \
     libpostproc-free \
     libswresample-free \
-    libswscale-free
+    libswscale-free \
+    noopenh264
 
 
 rpm-ostree override replace \
@@ -34,4 +35,8 @@ rpm-ostree override replace \
     gstreamer1-plugin-libav \
     gstreamer1-plugins-bad \
     gstreamer1-plugins-ugly \
-    gstreamer1-plugin-vaapi
+    gstreamer1-plugin-vaapi \
+    openh264 \
+    mozilla-openh264 \
+    x264 \
+    x265

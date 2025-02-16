@@ -44,7 +44,8 @@ modules:
       - heif-pixbuf-loader
       - ibm-plex-mono-fonts  
       - ifuse  
-      - iotop  
+      - iotop
+      - intel-media-driver
       - libimobiledevice
       - libdvdcss
       - libsss_autofs  
@@ -53,8 +54,6 @@ modules:
       - net-tools  
       - NetworkManager-sstp  
       - NetworkManager-sstp-gnome
-      - mozilla-openh264
-      - openh264
       - p7zip  
       - p7zip-plugins
       - pipx
@@ -73,8 +72,6 @@ modules:
       - vlc-plugin-gnome
       - vlc-plugin-gstreamer
       - wireguard-tools
-      - x264
-      - x265
       - yt-dlp
       - zstd
     remove:
