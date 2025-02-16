@@ -41,7 +41,6 @@ modules:
       - gnome-themes-extra
       - gnome-tweaks
       - gvfs-nfs
-      - heif-pixbuf-loader
       - ibm-plex-mono-fonts  
       - ifuse  
       - iotop

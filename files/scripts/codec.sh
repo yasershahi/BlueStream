@@ -45,4 +45,5 @@ rpm-ostree override replace \
     openh264 \
     mozilla-openh264 \
     x264 \
-    x265
+    x265 \
+    heif-pixbuf-loader
