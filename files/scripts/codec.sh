@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 set -oue pipefail
 
-(rpm-ostree override remove \
+rpm-ostree override remove \
+    fdk-aac-free \
     ffmpeg-free \
     libavcodec-free \
     libavdevice-free \
@@ -10,10 +11,20 @@ set -oue pipefail
     libavutil-free \
     libpostproc-free \
     libswresample-free \
-    libswscale-free \
-    --install=ffmpeg \
-    --install=gstreamer1-plugin-libav \
-    --install=gstreamer1-plugins-bad-free-extras \
-    --install=gstreamer1-plugins-bad-freeworld \
-    --install=gstreamer1-plugins-ugly \
-    --install=gstreamer1-vaapi) || true
+    libswscale-free
+
+rpm-ostree override replace \
+  --experimental \
+  --from repo='fedora-multimedia' \
+    libheif \
+    libva \
+    libva-intel-media-driver \
+    mesa-dri-drivers \
+    mesa-filesystem \
+    mesa-libEGL \
+    mesa-libGL \
+    mesa-libgbm \
+    mesa-libglapi \
+    mesa-libxatracker \
+    mesa-va-drivers \
+    mesa-vulkan-drivers

@@ -13,7 +13,7 @@ modules:
 
   - type: bling
     install:
-        - rpmfusion
+        - negativo17
         - dconf-update-service
 
   - type: rpm-ostree
@@ -29,6 +29,8 @@ modules:
       - dconf-editor
       - distrobox
       - fastfetch
+      - ffmpeg
+      - ffmpeg-libs
       - ffmpegthumbnailer
       - flatpak-spawn
       - fish
@@ -40,12 +42,17 @@ modules:
       - gnome-epub-thumbnailer
       - gnome-themes-extra
       - gnome-tweaks
+      - gstreamer1-plugins-bad
+      - gstreamer1-plugins-ugly
+      - gstreamer1-plugins-vaapi
+      - gstreamer1-plugins-libav
       - gvfs-nfs
       - heif-pixbuf-loader
       - ibm-plex-mono-fonts  
       - ifuse  
       - iotop  
-      - libimobiledevice  
+      - libimobiledevice
+      - libdvdcss
       - libsss_autofs  
       - libxcrypt-compat
       - lshw
@@ -63,8 +70,10 @@ modules:
       - subversion
       - tailscale
       - tcpdump
-      - unrar
+      - rar
+      - vlc
       - wireguard-tools
+      - x264
       - yt-dlp
       - zstd
     remove:
@@ -76,6 +85,7 @@ modules:
       - gnome-shell-extension-window-list
       - gnome-shell-extension-background-logo
       - gnome-software-rpm-ostree
+      - totem-video-thumbnailer
 
   - type: script
     scripts:
@@ -86,13 +96,9 @@ modules:
   - type: fonts
     fonts:
       nerd-fonts:
-        - FiraCode
         - Hack
         - Terminus
-        - JetBrainsMono
         - NerdFontsSymbolsOnly
-      google-fonts:
-        - Inter
 
   - type: systemd
     system:
