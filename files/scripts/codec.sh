@@ -16,7 +16,11 @@ rpm-ostree override remove \
     gstreamer1-plugins-bad-free \
     gstreamer1-plugins-bad-free-libs \
     gstreamer1-plugins-ugly-free \
-    gstreamer1-plugin-openh264
+    gstreamer1-plugin-openh264 \
+    gstreamer1-plugins-bad \
+    libheif \
+    mozilla-openh264 \
+    openh264
 
 
 
