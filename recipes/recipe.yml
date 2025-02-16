@@ -64,7 +64,6 @@ modules:
       - subversion
       - tailscale
       - tcpdump
-      - ungoogled-chromium
       - unrar
       - wireguard-tools
       - yt-dlp
