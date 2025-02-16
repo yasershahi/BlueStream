@@ -34,9 +34,9 @@ modules:
       - gnome-themes-extra
       - ibm-plex-mono-fonts  
       - ifuse  
-      - iotop
-      - libimobiledevice
-      - libdvdcss
+      - iotop  
+      - libimobiledevice  
+      - liberation-fonts-all  
       - libsss_autofs  
       - libxcrypt-compat
       - lshw
