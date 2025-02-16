@@ -86,7 +86,6 @@ modules:
   - type: script
     scripts:
       - codec.sh
-      - driver.sh
       - patch.sh
 
   - type: fonts
