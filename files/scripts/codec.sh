@@ -38,11 +38,8 @@ rpm-ostree override replace \
     ffmpeg \
     ffmpeg-libs \
     gstreamer1-plugin-libav \
-    gstreamer1-plugins-bad \
     gstreamer1-plugins-ugly \
     gstreamer1-plugin-vaapi \
-    openh264 \
-    mozilla-openh264 \
     x264 \
     x265 \
     heif-pixbuf-loader
