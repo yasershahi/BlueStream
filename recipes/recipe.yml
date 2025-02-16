@@ -14,7 +14,6 @@ modules:
   - type: bling
     install:
         - rpmfusion
-        - dconf-update-service
 
   - type: rpm-ostree
     repos:
@@ -71,11 +70,6 @@ modules:
       - codec.sh
       - driver.sh
       - patch.sh
-
-  - type: fonts
-    fonts:
-      nerd-fonts:
-        - Hack
 
   - type: systemd
     system:
