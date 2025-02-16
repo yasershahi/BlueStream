@@ -2,7 +2,7 @@
 name: BlueStream
 description: Seamless Daily Computing with Fedora Silverblue at Its Core.
 
-base-image: quay.io/fedora/fedora-silverblue
+base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 41
 
 modules:
@@ -26,22 +26,12 @@ modules:
       - aria2  
       - android-tools
       - code
-      - clapper 
-      - dconf-editor
-      - distrobox
-      - fastfetch
-      - ffmpegthumbnailer
-      - flatpak-spawn
       - fish
-      - fzf
       - gcc
       - gh  
       - git-credential-oauth  
       - gnome-backgrounds-extras
-      - gnome-epub-thumbnailer
       - gnome-themes-extra
-      - gnome-tweaks
-      - gvfs-nfs
       - ibm-plex-mono-fonts  
       - ifuse  
       - iotop
@@ -84,11 +74,8 @@ modules:
       - gnome-shell-extension-background-logo
       - gnome-software-rpm-ostree
       - totem-video-thumbnailer
-
-  - type: script
-    scripts:
-      - codec.sh
-      - patch.sh
+      - adw-gtk3-theme
+      - yubikey-manager
 
   - type: fonts
     fonts:
