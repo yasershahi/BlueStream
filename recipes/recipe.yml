@@ -45,7 +45,6 @@ modules:
       - ibm-plex-mono-fonts  
       - ifuse  
       - iotop
-      - intel-media-driver
       - libimobiledevice
       - libdvdcss
       - libsss_autofs  
