@@ -18,7 +18,6 @@ rpm-ostree override remove \
     gstreamer1-plugins-ugly-free \
     gstreamer1-plugin-openh264 \
     libheif \
-    mozilla-openh264 \
     openh264
 
 
