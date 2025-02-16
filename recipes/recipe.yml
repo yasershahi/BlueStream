@@ -29,8 +29,6 @@ modules:
       - dconf-editor
       - distrobox
       - fastfetch
-      - ffmpeg
-      - ffmpeg-libs
       - ffmpegthumbnailer
       - flatpak-spawn
       - fish
@@ -42,10 +40,6 @@ modules:
       - gnome-epub-thumbnailer
       - gnome-themes-extra
       - gnome-tweaks
-      - gstreamer1-plugins-bad
-      - gstreamer1-plugins-ugly
-      - gstreamer1-plugins-vaapi
-      - gstreamer1-plugins-libav
       - gvfs-nfs
       - heif-pixbuf-loader
       - ibm-plex-mono-fonts  

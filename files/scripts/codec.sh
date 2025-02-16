@@ -13,6 +13,7 @@ rpm-ostree override remove \
     libswresample-free \
     libswscale-free
 
+
 rpm-ostree override replace \
   --experimental \
   --from repo='fedora-multimedia' \
@@ -27,4 +28,10 @@ rpm-ostree override replace \
     mesa-libglapi \
     mesa-libxatracker \
     mesa-va-drivers \
-    mesa-vulkan-drivers
+    mesa-vulkan-drivers \
+    ffmpeg \
+    ffmpeg-libs \
+    gstreamer1-plugin-libav \
+    gstreamer1-plugins-bad \
+    gstreamer1-plugins-ugly \
+    gstreamer1-plugin-vaapi
