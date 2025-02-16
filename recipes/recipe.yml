@@ -46,7 +46,6 @@ modules:
       - ifuse  
       - iotop  
       - libimobiledevice  
-      - liberation-fonts-all  
       - libsss_autofs  
       - libxcrypt-compat
       - lshw
