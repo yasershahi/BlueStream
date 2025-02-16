@@ -2,7 +2,7 @@
 name: BlueStream
 description: Seamless Daily Computing with Fedora Silverblue at Its Core.
 
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: quay.io/fedora/fedora-silverblue
 image-version: 41
 
 modules:
@@ -13,56 +13,47 @@ modules:
 
   - type: bling
     install:
-        - negativo17
+        - rpmfusion
         - dconf-update-service
 
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/trixieua/mutter-patched/repo/fedora-%OS_VERSION%/trixieua-mutter-patched-fedora-%OS_VERSION%.repo
       - https://packages.microsoft.com/yumrepos/vscode/config.repo
-      - https://copr.fedorainfracloud.org/coprs/wojnilowicz/ungoogled-chromium/repo/fedora-%OS_VERSION%/wojnilowicz-ungoogled-chromium-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/sunwire/envycontrol/repo/fedora-%OS_VERSION%/sunwire-envycontrol-fedora-%OS_VERSION%.repo
     install:
       - aria2  
       - android-tools
       - code
+      - fastfetch
+      - ffmpegthumbnailer
+      - flatpak-spawn
       - fish
       - gcc
-      - gh  
-      - git-credential-oauth  
       - gnome-backgrounds-extras
       - gnome-themes-extra
+      - gnome-tweaks
+      - gvfs-nfs
+      - heif-pixbuf-loader
       - ibm-plex-mono-fonts  
       - ifuse  
       - iotop  
       - libimobiledevice  
-      - liberation-fonts-all  
       - libsss_autofs  
       - libxcrypt-compat
       - lshw
-      - net-tools  
-      - NetworkManager-sstp  
-      - NetworkManager-sstp-gnome
+      - net-tools
       - p7zip  
       - p7zip-plugins
       - pipx
-      - pipewire-libs-extra
       - podman-compose
       - podmansh
       - powerline-fonts
-      - python3-envycontrol
-      - sstp-client  
       - subversion
       - tailscale
       - tcpdump
-      - rar
-      - rclone
+      - unrar
       - vlc
-      - vlc-plugin-ffmpeg
-      - vlc-plugin-gnome
-      - vlc-plugin-gstreamer
       - wireguard-tools
-      - yt-dlp
       - zstd
     remove:
       - gnome-tour
@@ -73,16 +64,17 @@ modules:
       - gnome-shell-extension-window-list
       - gnome-shell-extension-background-logo
       - gnome-software-rpm-ostree
-      - totem-video-thumbnailer
-      - adw-gtk3-theme
-      - yubikey-manager
+
+  - type: script
+    scripts:
+      - codec.sh
+      - driver.sh
+      - patch.sh
 
   - type: fonts
     fonts:
       nerd-fonts:
         - Hack
-        - Terminus
-        - NerdFontsSymbolsOnly
 
   - type: systemd
     system:
