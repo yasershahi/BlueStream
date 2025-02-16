@@ -59,9 +59,12 @@ modules:
       - net-tools  
       - NetworkManager-sstp  
       - NetworkManager-sstp-gnome
+      - mozilla-openh264
+      - openh264
       - p7zip  
       - p7zip-plugins
       - pipx
+      - pipewire-libs-extra
       - podman-compose
       - podmansh
       - powerline-fonts
@@ -72,8 +75,12 @@ modules:
       - tcpdump
       - rar
       - vlc
+      - vlc-plugin-ffmpeg
+      - vlc-plugin-gnome
+      - vlc-plugin-gstreamer
       - wireguard-tools
       - x264
+      - x265
       - yt-dlp
       - zstd
     remove:
