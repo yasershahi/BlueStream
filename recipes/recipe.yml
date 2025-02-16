@@ -25,7 +25,8 @@ modules:
     install:
       - aria2  
       - android-tools
-      - code  
+      - code
+      - clapper 
       - dconf-editor
       - distrobox
       - fastfetch
