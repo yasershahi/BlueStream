@@ -12,7 +12,11 @@ rpm-ostree override remove \
     libpostproc-free \
     libswresample-free \
     libswscale-free \
-    noopenh264
+    noopenh264 \
+    gstreamer1-plugins-bad-free \
+    gstreamer1-plugins-bad-free-libs \
+    gstreamer1-plugins-ugly-free
+
 
 
 rpm-ostree override replace \
