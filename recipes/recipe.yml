@@ -48,6 +48,7 @@ modules:
       - podman-compose
       - podmansh
       - powerline-fonts
+      - rclone
       - subversion
       - tailscale
       - tcpdump
