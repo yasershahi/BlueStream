@@ -46,8 +46,6 @@ modules:
       - pipx
       - podman-compose
       - podmansh
-      - powerline-fonts
-      - rclone
       - subversion
       - tailscale
       - tcpdump
@@ -63,7 +61,6 @@ modules:
       - gnome-shell-extension-places-menu
       - gnome-shell-extension-window-list
       - gnome-shell-extension-background-logo
-      - gnome-software-rpm-ostree
 
   - type: script
     scripts:
