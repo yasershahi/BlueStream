@@ -35,7 +35,8 @@ modules:
       - heif-pixbuf-loader
       - ibm-plex-mono-fonts  
       - ifuse  
-      - iotop  
+      - iotop
+      - liberation-fonts
       - libimobiledevice  
       - libsss_autofs  
       - libxcrypt-compat
