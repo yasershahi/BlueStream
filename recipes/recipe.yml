@@ -64,9 +64,8 @@ modules:
 
   - type: script
     scripts:
-      - gsettings.sh
-      - mutter.sh
-      - shell.sh
+      - install_buildstream.sh
+      - compile_gnome_build_meta.sh
 
   - type: systemd
     system:
