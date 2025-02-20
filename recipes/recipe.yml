@@ -17,7 +17,6 @@ modules:
 
   - type: rpm-ostree
     repos:
-      - https://copr.fedorainfracloud.org/coprs/trixieua/mutter-patched/repo/fedora-%OS_VERSION%/trixieua-mutter-patched-fedora-%OS_VERSION%.repo
       - https://packages.microsoft.com/yumrepos/vscode/config.repo
     install:
       - aria2  
