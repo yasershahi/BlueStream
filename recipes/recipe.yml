@@ -65,8 +65,6 @@ modules:
   - type: script
     scripts:
       - gsettings.sh
-      - codec.sh
-      - driver.sh
       - mutter.sh
       - shell.sh
 
