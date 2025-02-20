@@ -24,7 +24,10 @@ ninja -C builddir
 ninja -C builddir install
 
 # Clean up build dependencies
-dnf remove --setopt=clean_requirements_on_remove=1 -y $(dnf repoquery --installonly --latest-limit=1 --qf '%{NAME}')
+BUILD_DEPS=$(dnf repoquery --installonly --latest-limit=1 --qf '%{NAME}')
+if [ -n "$BUILD_DEPS" ]; then
+    dnf remove --setopt=clean_requirements_on_remove=1 -y $BUILD_DEPS
+fi
 
 # Clean up
 cd ..
