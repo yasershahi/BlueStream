@@ -3,7 +3,7 @@ name: BlueStream
 description: Seamless Daily Computing with Fedora Silverblue at Its Core.
 
 base-image: quay.io/fedora/fedora-silverblue
-image-version: 41
+image-version: 42
 
 modules:
   - type: files
