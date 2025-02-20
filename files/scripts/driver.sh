@@ -12,5 +12,3 @@ case "$(rpm -E %{_arch})" in
         rpm-ostree install intel-media-driver libva-intel-driver
         ;;
 esac
-
-rpm-ostree install libva-nvidia-driver

@@ -6,7 +6,7 @@ GSETTINGS_REPO="https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas.git"
 GSETTINGS_DIR="gsettings-desktop-schemas"
 
 # Install build dependencies
-dnf install -y git meson ninja-build glib2-devel
+dnf install -y git meson ninja-build glib2-devel gobject-introspection-devel
 
 # Clone the repository
 if [ ! -d "$GSETTINGS_DIR" ]; then

@@ -19,7 +19,7 @@ cd $SHELL_DIR
 git pull
 
 # Build and install
-meson builddir --prefix=/usr
+meson setup builddir --prefix=/usr
 ninja -C builddir
 ninja -C builddir install
 
