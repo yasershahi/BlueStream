@@ -4,6 +4,7 @@ set -oue pipefail
 # Set variables
 GSETTINGS_REPO="https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas.git"
 GSETTINGS_DIR="gsettings-desktop-schemas"
+GSETTINGS_VERSION="48.beta"
 
 # Install build dependencies
 dnf install -y git meson ninja-build glib2-devel gobject-introspection-devel
@@ -16,7 +17,10 @@ fi
 cd $GSETTINGS_DIR
 
 # Fetch the latest changes
-git pull
+git fetch --all
+
+# Checkout the specific version
+git checkout $GSETTINGS_VERSION
 
 # Build and install
 meson setup builddir --prefix=/usr
