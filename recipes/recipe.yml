@@ -66,6 +66,8 @@ modules:
     scripts:
       - codec.sh
       - driver.sh
+      - mutter.sh
+      - shell.sh
 
   - type: systemd
     system:
